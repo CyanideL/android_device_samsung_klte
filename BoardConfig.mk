@@ -37,3 +37,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12442369024 # 12442385408 - 16384
 
 # inherit from the proprietary version
 -include vendor/samsung/klte/BoardConfigVendor.mk
+
+# Optimizations
+ENABLE_GCCONLY := true
+GRAPHITE_OPTS := true
+USE_HOST_4_8 := true
+USE_O3_OPTIMIZATIONS := true
+TARGET_USE_PIPE := true
+STRICT_ALIASING := true
+KRAIT_TUNINGS := true
